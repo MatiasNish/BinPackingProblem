@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de Investigación</title>
+    <title>Proyecto de Investigación – Bin Packing</title>
     <style>
         body {
             background-color: #1e1e1e;
@@ -66,7 +66,7 @@
 <body>
 
     <!-- TÍTULO PRINCIPAL -->
-    <h1>Proyecto de Investigación</h1>
+    <h1>Proyecto de Investigación – Bin Packing Problem</h1>
 
     <!-- ======================= -->
     <!--   1. INTEGRANTES        -->
@@ -74,9 +74,9 @@
     <div class="section">
         <h2>Integrantes</h2>
         <ul>
-            <li>Nombre Apellido</li>
-            <li>Nombre Apellido</li>
-            <li>Nombre Apellido</li>
+            <li>Matias Brunaga</li>
+            <li>Sebastian Bogado</li>
+            <li>Lian Yang</li>
         </ul>
     </div>
 
@@ -86,13 +86,19 @@
     <div class="section">
         <h2>Proyecto en Overleaf</h2>
 
-        <!-- PREVIEW DEL PDF -->
-        <iframe src="AQUI_URL_DEL_PDF" allowfullscreen></iframe>
+        <!-- PREVIEW DEL PDF (mismo directorio que este HTML) -->
+        <iframe src="BPP - Latex Project.pdf" allowfullscreen></iframe>
 
         <!-- BOTONES -->
         <div style="text-align:center; margin-top:20px;">
-            <a class="btn" href="AQUI_URL_DEL_PDF" download>Descargar PDF</a>
-            <a class="btn" href="AQUI_URL_DEL_OVERLEAF" target="_blank">Ver en Overleaf</a>
+            <!-- Descarga del PDF local -->
+            <a class="btn" href="BPP - Latex Project.pdf" download="BPP - Latex Project.pdf">
+                Descargar PDF
+            </a>
+            <!-- Link al proyecto en Overleaf -->
+            <a class="btn" href="https://www.overleaf.com/read/qftqxfrjhnzt#ba7589" target="_blank">
+                Ver en Overleaf
+            </a>
         </div>
     </div>
 
@@ -102,22 +108,28 @@
     <div class="section">
         <h2>Código de Algoritmo Genético</h2>
 
+        <!-- Ejemplo de bloque de código; luego lo reemplazás -->
         <pre>
-# Ejemplo de código Python (vos reemplazás luego)
-import random
+# Algoritmo genético para el Bin Packing Problem
+# (ejemplo, reemplazar por el código real)
 
-def fitness(x):
-    return x*x
+def evaluar_solucion(solucion):
+    # TODO: implementar función de evaluación
+    pass
 
-def genetic_algorithm():
-    poblacion = [random.randint(0, 100) for _ in range(10)]
-    return max(poblacion, key=fitness)
+def algoritmo_genetico():
+    # TODO: implementar algoritmo
+    pass
 
-print(genetic_algorithm())
+if __name__ == "__main__":
+    algoritmo_genetico()
         </pre>
 
         <div style="text-align:center;">
-            <a class="btn" href="codigo_genetico.py" download>Descargar .py</a>
+            <!-- Este .py debe estar en la misma carpeta que el HTML -->
+            <a class="btn" href="codigo_genetico.py" download="codigo_genetico.py">
+                Descargar .py
+            </a>
         </div>
     </div>
 
@@ -127,9 +139,9 @@ print(genetic_algorithm())
     <div class="section">
         <h2>Sitios Relacionados</h2>
         <ul>
-            <li><a href="#" target="_blank">Link 1</a></li>
-            <li><a href="#" target="_blank">Link 2</a></li>
-            <li><a href="#" target="_blank">Link 3</a></li>
+            <li><a href="#" target="_blank">Artículo 1 relacionado</a></li>
+            <li><a href="#" target="_blank">Artículo 2 relacionado</a></li>
+            <li><a href="#" target="_blank">Repositorio o demo</a></li>
         </ul>
     </div>
 
