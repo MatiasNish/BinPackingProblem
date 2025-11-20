@@ -47,13 +47,18 @@
             height: 600px;
             border: none;
             border-radius: 10px;
+            background: #111;
         }
 
-        pre {
+        /* Preview de código con altura fija y scroll interno */
+        .code-box{
+            height: 700px;          /* capado de altura */
+            overflow: auto;         /* slider interno */
             background-color: #111;
             padding: 20px;
             border-radius: 10px;
-            overflow-x: auto;
+            white-space: pre;       /* respeta espacios y saltos */
+            font-family: Consolas, "Courier New", monospace;
             font-size: 14px;
             color: #00e676;
         }
@@ -96,7 +101,7 @@
                 Descargar PDF
             </a>
             <!-- Link al proyecto en Overleaf -->
-            <a class="btn" href="https://www.overleaf.com/read/qftqxfrjhnzt#ba7589" target="_blank">
+            <a class="btn" href="https://www.overleaf.com/read/qftqxfrjhnzt#ba7589" target="_blank" rel="noopener noreferrer">
                 Ver en Overleaf
             </a>
         </div>
@@ -108,28 +113,12 @@
     <div class="section">
         <h2>Código de Algoritmo Genético</h2>
 
-        <!-- Ejemplo de bloque de código; luego lo reemplazás -->
-        <pre>
-# Algoritmo genético para el Bin Packing Problem
-# (ejemplo, reemplazar por el código real)
-
-def evaluar_solucion(solucion):
-    # TODO: implementar función de evaluación
-    pass
-
-def algoritmo_genetico():
-    # TODO: implementar algoritmo
-    pass
-
-if __name__ == "__main__":
-    algoritmo_genetico()
-        </pre>
+        <!-- Preview del .py leído desde el mismo directorio, con scroll interno -->
+        <pre id="code-preview" class="code-box">Cargando Genetico.py ...</pre>
 
         <div style="text-align:center;">
-            <!-- Este .py debe estar en la misma carpeta que el HTML -->
-            <a class="btn" href="codigo_genetico.py" download="codigo_genetico.py">
-                Descargar .py
-            </a>
+            <!-- Descarga directa del mismo archivo -->
+            <a class="btn" href="Genetico.py" download="Genetico.py">Descargar .py</a>
         </div>
     </div>
 
@@ -139,24 +128,39 @@ if __name__ == "__main__":
     <div class="section">
         <h2>Sitios Relacionados</h2>
         <ul>
-            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7135247/" target="_blank">Positions and covering: A two-stage methodology to obtain optimal solutions for the 2d-bin packing problem</a></li>
-            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7274307/" target="_blank">On the Impact of Fuzzy Constraints in the Variable Size and Cost Bin Packing Problem</a></li>
-            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10361966/" target="_blank">Hybrid approach for solving real-world bin packing problem instances using quantum annealers</a></li>
-            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9154095/" target="_blank">Covering, corner-searching and occupying: A three-stage intelligent algorithm for the 2d multishape part packing problem</a></li>
-            <li><a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-77432016000200155" target="_blank">Una nueva estrategia heurística para el problema de Bin Packing</a></li>
-            <li><a href="https://dialnet.unirioja.es/descarga/articulo/4835562.pdf" target="_blank">Un problema tipo bin-packing</a></li>
-            <li><a href="http://eprints.uanl.mx/17851/1/1080288723.pdf" target="_blank">Problema generalizado del empaquetamiento de contenedores</a></li>
-            <li><a href="https://www.scribd.com/presentation/500508065/Bin-Packing-Problem" target="_blank">Optimización en Bin Packing - Informática teórica</a></li>
-            <li><a href="https://www.scielo.org.mx/pdf/iit/v17n2/1405-7743-iit-17-02-00155.pdf" target="_blank">Una nueva estrategia heurística para el problema de Bin Packing</a></li>
-            <li><a href="https://www.nature.com/articles/s41598-024-81749-5" target="_blank">A new approach for bin packing problem using knowledge reuse and improved heuristic</a></li>
-            <li><a href="https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library" target="_blank">BPPLIB – A Bin Packing Problem Library</a></li>
-            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221723004800" target="_blank">Lower and upper bounding procedures for the bin packing problem</a></li>
-            <li><a href="https://www.academia.edu/18232768/Una_b%C3%BAsqueda_tab%C3%BA_para_el_Bin_Packing_Problem" target="_blank">Una búsqueda tabú para el Bin Packing Problem</a></li>
-            <li><a href="https://dl.acm.org/doi/10.1145/585265.585269" target="_blank">On the online bin packing problem - Journal of the ACM</a></li>
-            <li><a href="https://www.arxiv.org/abs/2508.13347" target="_blank">On the 2D Demand Bin Packing Problem - arXiv</a></li>
-            <li><a href="https://www.aimsciences.org/article/doi/10.3934/jimo.2022088" target="_blank">The evolution of rectangular bin packing problem — A review</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7135247/" target="_blank" rel="noopener noreferrer">Positions and covering: A two-stage methodology to obtain optimal solutions for the 2d-bin packing problem</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7274307/" target="_blank" rel="noopener noreferrer">On the Impact of Fuzzy Constraints in the Variable Size and Cost Bin Packing Problem</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10361966/" target="_blank" rel="noopener noreferrer">Hybrid approach for solving real-world bin packing problem instances using quantum annealers</a></li>
+            <li><a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-77432016000200155" target="_blank" rel="noopener noreferrer">Una nueva estrategia heurística para el problema de Bin Packing</a></li>
+            <li><a href="https://dialnet.unirioja.es/descarga/articulo/4835562.pdf" target="_blank" rel="noopener noreferrer">Un problema tipo bin-packing</a></li>
+            <li><a href="http://eprints.uanl.mx/17851/1/1080288723.pdf" target="_blank" rel="noopener noreferrer">Problema generalizado del empaquetamiento de contenedores</a></li>
+            <li><a href="https://www.scribd.com/presentation/500508065/Bin-Packing-Problem" target="_blank" rel="noopener noreferrer">Optimización en Bin Packing - Informática teórica</a></li>
+            <li><a href="https://www.scielo.org.mx/pdf/iit/v17n2/1405-7743-iit-17-02-00155.pdf" target="_blank" rel="noopener noreferrer">Una nueva estrategia heurística para el problema de Bin Packing</a></li>
+            <li><a href="https://www.nature.com/articles/s41598-024-81749-5" target="_blank" rel="noopener noreferrer">A new approach for bin packing problem using knowledge reuse and improved heuristic</a></li>
+            <li><a href="https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library" target="_blank" rel="noopener noreferrer">BPPLIB – A Bin Packing Problem Library</a></li>
+            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221723004800" target="_blank" rel="noopener noreferrer">Lower and upper bounding procedures for the bin packing problem</a></li>
+            <li><a href="https://www.academia.edu/18232768/Una_b%C3%BAsqueda_tab%C3%BA_para_el_Bin_Packing_Problem" target="_blank" rel="noopener noreferrer">Una búsqueda tabú para el Bin Packing Problem</a></li>
+            <li><a href="https://dl.acm.org/doi/10.1145/585265.585269" target="_blank" rel="noopener noreferrer">On the online bin packing problem - Journal of the ACM</a></li>
+            <li><a href="https://www.arxiv.org/abs/2508.13347" target="_blank" rel="noopener noreferrer">On the 2D Demand Bin Packing Problem - arXiv</a></li>
+            <li><a href="https://www.aimsciences.org/article/doi/10.3934/jimo.2022088" target="_blank" rel="noopener noreferrer">The evolution of rectangular bin packing problem — A review</a></li>
         </ul>
     </div>
+
+    <script>
+      // Carga el contenido de Genetico.py y lo muestra en la caja de preview
+      (function () {
+        const pre = document.getElementById('code-preview');
+        fetch('Genetico.py', { cache: 'no-store' })
+          .then(resp => {
+            if (!resp.ok) throw new Error('No se pudo leer Genetico.py');
+            return resp.text();
+          })
+          .then(txt => { pre.textContent = txt; })
+          .catch(err => {
+            pre.textContent = 'Error: ' + err.message + '\nAsegúrate de que Genetico.py esté en el mismo directorio que este HTML.';
+          });
+      })();
+    </script>
 
 </body>
 </html>
